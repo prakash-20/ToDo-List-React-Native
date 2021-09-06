@@ -7,6 +7,7 @@ import {
   TextInput,
   TouchableHighlight,
   View,
+  Alert,
 } from "react-native";
 import uuid from "react-native-uuid";
 import filter from "lodash.filter";
@@ -41,6 +42,8 @@ export default function App() {
       setData(() => data_);
       setFullData(data_);
       setText("");
+    } else {
+      Alert.alert("Required", "Input is necessory");
     }
   };
   const RemoveData = (props) => {
