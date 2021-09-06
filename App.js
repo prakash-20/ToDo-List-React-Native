@@ -33,24 +33,7 @@ export default function App() {
       name: "Bread",
     },
   ]);
-  const [fullData, setFullData] = useState([
-    {
-      id: "1",
-      name: "Milk",
-    },
-    {
-      id: "2",
-      name: "Coffee",
-    },
-    {
-      id: "3",
-      name: "Oranges",
-    },
-    {
-      id: "4",
-      name: "Bread",
-    },
-  ]);
+  const [fullData, setFullData] = useState(data);
 
   const AddData = () => {
     if (text !== "") {
@@ -61,7 +44,6 @@ export default function App() {
     }
   };
   const RemoveData = (props) => {
-    console.log(props);
     setData((prevData) => {
       return prevData.filter((data) => data.id != props);
     });
