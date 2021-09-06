@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Dimensions,
-  FlatList,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableHighlight,
-  View,
-} from "react-native";
+import { StyleSheet, Text, TouchableHighlight, View } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 export default function RenderData(props) {

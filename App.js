@@ -1,10 +1,9 @@
 import { StatusBar } from "expo-status-bar";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Dimensions,
   FlatList,
   StyleSheet,
-  Text,
   TextInput,
   TouchableHighlight,
   View,
@@ -13,16 +12,6 @@ import uuid from "react-native-uuid";
 import filter from "lodash.filter";
 import { AntDesign } from "@expo/vector-icons";
 import RenderData from "./RenderData";
-// const RenderData = ({ item }) => {
-//   return (
-//     <View style={styles.itemlist} key={item.id}>
-//       <Text style={styles.itemlist_text}>{item.name}</Text>
-//       <TouchableHighlight>
-//         <AntDesign name="delete" size={24} color="black" />
-//       </TouchableHighlight>
-//     </View>
-//   );
-// };
 
 export default function App() {
   const [text, setText] = useState("");
