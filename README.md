@@ -1,5 +1,7 @@
 # ToDo-List-React-Native
 
 
-Used loadash filter to handle search:
-npm i --save lodash.filter 
+# Dependencies
+  * This app requires these dependencies:
+    * Used loadash filter to handle search
+    * npm i --save lodash.filter
